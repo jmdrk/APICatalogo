@@ -39,11 +39,6 @@ namespace ApiCatalogo.Controllers
         [HttpPost]
         public ActionResult Post([FromBody]Categoria categoria)
         {
-            //if(!ModelState.IsValid)
-            //{
-            //    return BadRequest(ModelState);
-            //}
-
             _context.Categorias.Add(categoria);
             _context.SaveChanges();
 
@@ -54,10 +49,6 @@ namespace ApiCatalogo.Controllers
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromBody] Categoria categoria)
         {
-            //if(!ModelState.IsValid)
-            //{
-            //    return BadRequest(ModelState);
-            //}
             if (id != categoria.CategoriaId)
             {
                 return BadRequest();
@@ -72,7 +63,6 @@ namespace ApiCatalogo.Controllers
         public ActionResult<Categoria> Delete(int id)
         {
             var categoria = _context.Categorias.FirstOrDefault(p => p.CategoriaId == id);
-            //var categoria = _context.Categorias.Find(id);
 
             if (categoria == null)
             {
