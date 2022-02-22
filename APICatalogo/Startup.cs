@@ -79,17 +79,17 @@ namespace APICatalogo
                     Version = "v1",
                     Title = "APICatalogo",
                     Description = "Catálogo de Produtos e Categorias",
-                    TermsOfService = new Uri("https://exemple.net/terms"),
+                    TermsOfService = new Uri("https://www.exemple.net"),
                     Contact = new OpenApiContact
                     {
-                        Name = "jmdrk",
-                        Email = "jmdrk14@gmail.com",
-                        Url = new Uri("https://exemple.net"),
+                        Name = "macoratti",
+                        Email = "macoratti@yahoo.com",
+                        Url = new Uri("https://www.exemple.net"),
                     },
                     License = new OpenApiLicense
                     {
                         Name = "Usar sobre LICX",
-                        Url = new Uri("https://exemple.net/license"),
+                        Url = new Uri("https://www.exemple.net.net/license"),
                     }
                 });
 
@@ -122,7 +122,6 @@ namespace APICatalogo
             {
                 LogLevel = LogLevel.Information
             })); ;
-
 
             app.UseHttpsRedirection();
 

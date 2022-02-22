@@ -15,7 +15,7 @@ namespace ApiCatalogo.Validations
             var primeiraLetra = value.ToString()[0].ToString();
             if (primeiraLetra != primeiraLetra.ToUpper())
             {
-                return new ValidationResult("A primeira letra do nome do produto deve ser maiúscula");
+                return new ValidationResult("A primeira letra do nome do produto deve ser maiuscula");
             }
 
             return ValidationResult.Success;

@@ -10,7 +10,6 @@ using System.Linq;
 
 namespace ApiCatalogo.Controllers
 {
-    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiConventionType(typeof(DefaultApiConventions))]
     [Produces("application/json")]
     [Route("api/[Controller]")]
@@ -72,7 +71,6 @@ namespace ApiCatalogo.Controllers
             return produtoDto;
         }
 
-        //  api/produtos
         [HttpPost]
         public ActionResult Post([FromBody]ProdutoDTO produtoDto)
         {
@@ -113,7 +111,6 @@ namespace ApiCatalogo.Controllers
             return Ok();
         }
 
-        //  api/produtos/1
         [HttpDelete("{id}")]
         public ActionResult<ProdutoDTO> Delete(int id)
         {

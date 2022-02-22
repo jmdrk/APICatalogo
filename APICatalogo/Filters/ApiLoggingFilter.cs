@@ -15,7 +15,6 @@ namespace ApiCatalogo.Filters
             _logger = logger;
         }
 
-        //executa antes da Action
         public void OnActionExecuting(ActionExecutingContext context)
         {
             _logger.LogInformation("### Executando -> OnActionExecuting");
@@ -24,7 +23,6 @@ namespace ApiCatalogo.Filters
             _logger.LogInformation($"ModelState : {context.ModelState.IsValid}");
             _logger.LogInformation("###################################################");
         }
-        //executa depois da Action
         public void OnActionExecuted(ActionExecutedContext context)
         {
             _logger.LogInformation("### Executando -> OnActionExecuted");

@@ -38,7 +38,7 @@ namespace ApiCatalogo.Logging
 
         private void EscreverTextoNoArquivo(string mensagem)
         {
-            string caminhoArquivoLog = @"c:\dados\log\Macoratti_Log.txt";
+            string caminhoArquivoLog = @"C:\Users\T-Gamer\log\Logteste.txt";
             using (StreamWriter streamWriter = new StreamWriter(caminhoArquivoLog, true))
             {
                 try

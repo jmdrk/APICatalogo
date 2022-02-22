@@ -13,7 +13,6 @@ using System.Linq;
 
 namespace ApiCatalogo.Controllers
 {
-    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Produces("application/json")]
     [Route("api/[Controller]")]
     [ApiController]
@@ -90,10 +89,9 @@ namespace ApiCatalogo.Controllers
         /// <summary>
         /// Obtem uma Categoria pelo seu Id
         /// </summary>
-        /// <param name="id">codigo do categoria</param>
+        /// <param name="id">codigo da categoria</param>
         /// <returns>Objetos Categoria</returns>
         [HttpGet("{id}", Name = "ObterCategoria")]
-        //[EnableCors("PermitirApiRequest")]
         [ProducesResponseType(typeof(ProdutoDTO),StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<CategoriaDTO> Get(int id)
