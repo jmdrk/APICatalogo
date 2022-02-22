@@ -79,17 +79,17 @@ namespace APICatalogo
                     Version = "v1",
                     Title = "APICatalogo",
                     Description = "Catálogo de Produtos e Categorias",
-                    TermsOfService = new Uri("https://macoratti.net/terms"),
+                    TermsOfService = new Uri("https://exemple.net/terms"),
                     Contact = new OpenApiContact
                     {
-                        Name = "macoratti",
-                        Email = "macoratti@yahoo.com",
-                        Url = new Uri("https://www.macoratti.net"),
+                        Name = "jmdrk",
+                        Email = "jmdrk14@gmail.com",
+                        Url = new Uri("https://exemple.net"),
                     },
                     License = new OpenApiLicense
                     {
                         Name = "Usar sobre LICX",
-                        Url = new Uri("https://macoratti.net/license"),
+                        Url = new Uri("https://exemple.net/license"),
                     }
                 });
 

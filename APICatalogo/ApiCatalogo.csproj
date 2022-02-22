@@ -7,12 +7,12 @@
    <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591</NoWarn>
-    <Copyright>Macoratti .net</Copyright>
+    <Copyright>JM</Copyright>
     <Description>Catalogo de Produtos e Categorias</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\_curso_webapi\APICatalogo\APICatalogo\ApiCatalogo.xml</DocumentationFile>
+    <DocumentationFile>C:\APICatalogo\APICatalogo\ApiCatalogo.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
